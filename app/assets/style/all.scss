@@ -1,4 +1,7 @@
 @import "reset";
+@import "variable";
+@import "base";
+
 $color: #00cc99;
 
 .header {
@@ -14,7 +17,7 @@ $color: #00cc99;
 .box {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: $secondary;
   display: flex;
   transition: all 0.5s;
   &:hover {
