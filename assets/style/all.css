@@ -118,6 +118,30 @@ a {
 .pxy-15 {
   padding: 15px 16px; }
 
+.text-primary {
+  color: #AA0601; }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.text-secondary {
+  color: #FBF2F2; }
+
+.bg-secondary {
+  background-color: #FBF2F2; }
+
+.text-dark {
+  color: #000; }
+
+.bg-dark {
+  background-color: #000; }
+
+.text-light {
+  color: #fff; }
+
+.bg-light {
+  background-color: #fff; }
+
 .header {
   height: 200px;
   background-color: #00cc99; }
