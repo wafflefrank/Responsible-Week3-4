@@ -21,10 +21,11 @@ $colors:(
 
 // font
 $fz-base:16px;
-$line-heigt-base:1.5; 
+$line-heigt-base:1.5;
+$font-family-base:"Roboto","Noto Sans", sans-serif; 
 $fz-sm:$fz-base * 0.875; //14px 
 $fz-m:$fz-base * 1.25; //20px
 $fz-l:$fz-base * 1.5; //24px
 $fz-xl:$fz-base * 2.25; //36px
 $fz-xxl:$fz-base * 3; //48px
-    
+   

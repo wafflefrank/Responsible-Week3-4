@@ -1,18 +1,11 @@
 @import "reset";
-@import "base";
 @import "variable";
-@import "layout";
+@import "base";
 @import "mixin";
 @import "grid";
+@import "layout";
 
 
-
-
-
-.footer {
-  height: 200px;
-  background-color: #a1a7dd;
-}
 
 .box {
   width: 100px;
@@ -22,6 +15,6 @@
   transition: all 0.5s;
   &:hover {
     width: 200px;
-    background-color: $color;
+    background-color: $primary;
   }
 }
