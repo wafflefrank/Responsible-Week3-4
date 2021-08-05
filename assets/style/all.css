@@ -49,6 +49,35 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.text-primary {
+  color: #AA0601; }
+
+.bg-primary {
+  background-color: #AA0601; }
+
+.text-secondary {
+  color: #FBF2F2; }
+
+.bg-secondary {
+  background-color: #FBF2F2; }
+
+.text-dark {
+  color: #000; }
+
+.bg-dark {
+  background-color: #000; }
+
+.text-light {
+  color: #fff; }
+
+.bg-light {
+  background-color: #fff; }
+
+body {
+  font-family: "Roboto", "Noto Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 16px; }
+
 a {
   display: block;
   text-decoration: none; }
@@ -100,11 +129,38 @@ a {
 .mx-0 {
   margin: 0 auto; }
 
+.me-48 {
+  margin-right: 48px; }
+
+.me-32 {
+  margin-right: 32px; }
+
+.me-22 {
+  margin-right: 22px; }
+
+.mt-44 {
+  margin-top: 44px; }
+
+.mt-42 {
+  margin-top: 42px; }
+
+.mt-32 {
+  margin-top: 32px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-24 {
+  margin-top: 24px; }
+
 .w-100 {
   width: 100%; }
 
 .h-100 {
   height: 100%; }
+
+.pt-32 {
+  padding-top: 32px; }
 
 .py-40 {
   padding: 48px 0; }
@@ -118,37 +174,72 @@ a {
 .pxy-15 {
   padding: 15px 16px; }
 
-.text-primary {
-  color: #AA0601; }
-
-.bg-primary {
-  background-color: #AA0601; }
-
-.text-secondary {
-  color: #FBF2F2; }
-
-.bg-secondary {
-  background-color: #FBF2F2; }
-
-.text-dark {
-  color: #000; }
-
-.bg-dark {
-  background-color: #000; }
-
-.text-light {
-  color: #fff; }
-
-.bg-light {
-  background-color: #fff; }
-
 .header {
-  height: 200px;
-  background-color: #00cc99; }
+  padding: 30px 56px 30px 88px; }
+  .header h1 a {
+    background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true") no-repeat;
+    width: 80px;
+    height: 49px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+  .header li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 0 32px; }
+  .header li a:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+    color: #edf1aa;
+    font-weight: bold; }
+
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 7px 30px 39px; } }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .header h1 a {
+      margin: 10px 0; }
+    .header ul {
+      width: 100%;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .header li {
+      width: 50%;
+      outline: 1px solid #fff; }
+      .header li a {
+        padding: 8px 0px;
+        text-align: center; } }
 
 .footer {
-  height: 200px;
-  background-color: #a1a7dd; }
+  padding-bottom: 32px; }
+  .footer .footer-left {
+    padding-top: 44px; }
+  .footer .footer-right {
+    margin-top: 32px; }
+  .footer .footer-content img {
+    width: 36px;
+    height: 36px; }
+  .footer .footer-content a {
+    font-size: 36px; }
+  .footer .fab {
+    font-size: 48px; }
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 0 39px 32px; }
+  .fab {
+    font-size: 24px; } }
 
 .box {
   width: 100px;
@@ -162,6 +253,6 @@ a {
   transition: all 0.5s; }
   .box:hover {
     width: 200px;
-    background-color: #00cc99; }
+    background-color: #AA0601; }
 
 /*# sourceMappingURL=all.css.map */
