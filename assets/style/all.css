@@ -388,18 +388,4 @@ a {
   .faq ul li {
     margin-bottom: 20px; } }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: #FBF2F2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #AA0601; }
-
 /*# sourceMappingURL=all.css.map */
