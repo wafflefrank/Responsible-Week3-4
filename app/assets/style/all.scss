@@ -4,17 +4,8 @@
 @import "mixin";
 @import "grid";
 @import "layout";
+@import "index";
 @import "faq";
 
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: $secondary;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $primary;
-  }
-}
+
