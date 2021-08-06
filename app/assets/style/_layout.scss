@@ -14,10 +14,7 @@
             padding: 0 32px;
         }
         & a:hover {
-            transition: 0.5s;
-            transform: scale(1.5);
-            color: rgb(237, 241, 170);
-            font-weight: bold;
+            @include a-hover;
         }
     }
 }
@@ -52,6 +49,9 @@
     padding-bottom: 32px ;
     & .footer-left {
         padding-top: 44px;
+        li a:hover{
+         @include a-hover;
+        }
     }
     & .footer-right {
         margin-top: 32px;
@@ -68,10 +68,12 @@
     & .fab {
         font-size: $fz-xxl;
     }
+    & .copyRight li a:hover{
+        @include a-hover;
+    }
 }
 @include desktop {
-    .footer {
-        padding: 0 39px 32px;
+    .footer {        
         & .fab {
             font-size: $fz-l;
         }
@@ -89,7 +91,10 @@
 }
 @include pad {
     .footer {
-        padding: 0 14.5px 24px 16px;
+        & .container{
+            padding: 0 15px;
+        }
+        padding-bottom: 24px ;
         & .fab {
             font-size: $fz-l;
         }
