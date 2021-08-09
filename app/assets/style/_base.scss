@@ -75,6 +75,13 @@ a{
 .mx-0 {
 	margin: 0 auto;
 }
+// margin-left
+.ms-30{
+	margin-left: 30px;
+}
+.ms-15{
+	margin-left: 15px;
+}
 // margin-right
 .me-48{
 	margin-right: 48px;
@@ -82,8 +89,17 @@ a{
 .me-32{
 	margin-right: 32px;
 }
+.me-30{
+	margin-right: 30px;
+}
 .me-22{
 	margin-right: 22px;
+}
+.me-15{
+	margin-right: 15px;
+}
+.me-10{
+	margin-right: 10px;
 }
 // margin-top
 .mt-44{
@@ -113,6 +129,9 @@ a{
 }
 .mb-16{
 	margin-bottom: 16px;
+}
+.mx-15{
+    max-width: 0 15px;
 }
 
 .w-100 {

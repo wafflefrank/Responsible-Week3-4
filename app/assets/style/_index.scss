@@ -5,8 +5,8 @@
     background-position: center;
     height: 840px;
     text-align: end;
-    & .container{
-        border: 1px solid blue;
+    & .container {
+        width: 100%;
     }
     & .banner-content {
         h1 {
@@ -18,12 +18,239 @@
         }
     }
 }
+@include desktop {
+    .banner {
+        & .container {
+            max-width: 768px;
+        }
+        & .banner-content {
+            font-size: $fz-xxl;
+            h1 {
+                font-size: $fz-m;
+            }
+        }
+    }
+}
 @include pad {
-    & .banner-content {
+    .banner {
+        & .container {
+            max-width: 576px;
+        }
+        & .banner-content {
+            font-size: 32px;
+            h1 {
+                font-size: $fz-base;
+            }
+        }
+    }
+}
+// 專業的心
+.profashion {
+    h2 {
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        padding-top: 60px;
+    }
+    & .profashion-item {
+        width: 255px;
+        h3 {
+            text-align: center;
+            font-size: $fz-l;
+            color: $primary;
+        }
+        p {
+            text-align: left;
+            line-height: 24px;
+            margin: 8px 0 80px;
+        }
+    }
+    & .profashion-img {
+        height: 100px;
+        margin: 48px 0 24px;
+    }
+}
+@include desktop {
+    .profashion {
+        h2 {
+            font-size: 32px;
+        }
+        & .container {
+            max-width: 768px;
+        }
+        & .profashion-list {
+            flex-wrap: wrap;
+        }
+        & .profashion-item {
+            width: 50%;
+            flex-direction: column;
+            display: flex;
+            p {
+                width: 255px;
+                align-self: center;
+            }
+        }
+    }
+}
+@include pad {
+    .profashion {
+        h2 {
+            font-size: $fz-l;
+        }
+        & .container {
+            max-width: 576px;
+        }
+        & .profashion-item {
+            width: 100%;
+            margin-bottom: -40px;
+            p {
+                width: 255px;
+            }
+        }
+    }
+}
+// 經典系列
+.classic-glass {
+    text-align: center;
+    h2 {
+        margin: 60px 0 40px 0;
+    }
+    p {
         font-size: $fz-xxl;
-        margin-right: 38.5px;
-        h1 {
+        color: #aa0601;
+        font-style: italic;
+        font-weight: 900;
+    }
+    & .img-size {
+        width: 635px;
+    }
+}
+@include desktop {
+    .classic-glass {
+        & .container {
+            max-width: 768px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        ul li {
+            flex-direction: row;
+        }
+        & .classic-title {
+            margin-left: 30px;
+            p {
+                font-size: 28px;
+            }
+        }
+        & .img-size {
+            width: 390px;
+        }
+    }
+}
+@include pad {
+    .classic-glass {
+        & .container {
+            max-width: 576px;
+        }
+        h2 {
             font-size: $fz-m;
+            margin: 20px 0 32px;
+        }
+        li {
+            position: relative;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        & .classic-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-left: 0;
+            img {
+                width: 37px;
+                height: 37px;
+            }
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+// 聯名設計
+.co-design {
+    height: 705px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h2 {
+        font-size: $fz-xxl;
+        color: $light;
+        font-weight: bold;
+        text-align: center;
+        padding: 60px 0 40px;
+    }
+    li {
+        position: relative;
+        background-color: $light;
+        overflow: hidden;
+        img {
+            opacity: 0.5;
+            display: block;
+        }
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $primary;
+            font-size: 72px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+@include desktop {
+    .co-design {
+        height: 452px;
+        padding-bottom: 23px;
+        &.container {
+            max-width: 768px;
+        }
+        h2 {
+            font-size: 32px;
+            padding: 32px 0 40px;
+        }
+        li {
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+}
+@include pad {
+    .co-design {
+        height: 719px;
+        &.container {
+            max-width: 576px;
+        }
+        h2 {
+            font-size: $fz-m;
+            padding: 32px 0 20px;
+        }
+        ul {
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                max-width: 100%;
+                margin: 0 15px 15px 15px;
+                img {
+                    width: 345px;
+                    height: 291px;
+                }
+            }
         }
     }
 }
